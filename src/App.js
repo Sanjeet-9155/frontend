@@ -24,17 +24,17 @@ function App() {
       <BrowserRouter>
         <Nav />
         <Routes>
-          <Route path="/" element={<Home />}/>
+          <Route path="/" element={<ProductDetail />}/>
+          <Route path="/productDetail" element={<ProductDetail />}/>
+          <Route path="/login" element={<Login />}/>
           <Route path="/home" element={<Home />}/>
           <Route path="/add" element={<h1>add component</h1>}/>
           <Route path="/dashbord" element={<DashBord/>}/>
-          <Route path="/productDetail" element={<ProductDetail />}/>
           <Route path="/addproduct" element={<AddProductPage />}/>
           <Route path="/profile" element={<h1>profile component</h1>}/>
           <Route path="/signup" element={<SignUp />}/>
           <Route path="/updateproduct" element={<UpdateProductPage />}/>
           {/* <Route path="/qrcode" element={<QrCodePage />}/> */}
-          <Route path="/login" element={<Login />}/>
           {/* <Route path="/addquiz" element={<AddQuiz />}/> */}
           <Route path="/cart" element={<Cart/>}/>
         </Routes>
